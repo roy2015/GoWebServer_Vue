@@ -1,13 +1,14 @@
 package main
 
 import (
+	"server/controllers/admin"
+	"server/controllers/blog"
+	"server/models"
+	"server/util"
+
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/orm"
 	"github.com/astaxie/beego/plugins/cors"
-	"github.com/lisijie/goblog/controllers/admin"
-	"github.com/lisijie/goblog/controllers/blog"
-	"github.com/lisijie/goblog/models"
-	"github.com/lisijie/goblog/util"
 )
 
 func init() {
@@ -68,6 +69,7 @@ func main() {
 	beego.Router("/admin/tag", &admin.TagController{}, "*:Index")
 	//用户管理
 	beego.Router("/admin/user/vueList", &admin.UserController{}, "*:VueList")
+	beego.Router("/admin/user/vueEdit", &admin.UserController{}, "*:VueEdit")
 	beego.Router("/admin/user/list", &admin.UserController{}, "*:List")
 	beego.Router("/admin/user/add", &admin.UserController{}, "*:Add")
 	beego.Router("/admin/user/edit", &admin.UserController{}, "*:Edit")

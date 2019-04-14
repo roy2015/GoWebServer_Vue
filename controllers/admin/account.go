@@ -4,10 +4,11 @@ import (
 	"strconv"
 	"strings"
 
+	"server/controllers/admin/test"
+	"server/models"
+	"server/util"
+
 	"github.com/astaxie/beego"
-	"github.com/lisijie/goblog/controllers/admin/test"
-	"github.com/lisijie/goblog/models"
-	"github.com/lisijie/goblog/util"
 )
 
 type AccountController struct {

@@ -1,8 +1,8 @@
 package admin
 
 import (
-	"github.com/lisijie/goblog/models"
-	"github.com/lisijie/goblog/models/option"
+	"server/models"
+	"server/models/option"
 )
 
 type SystemController struct {

@@ -3,9 +3,9 @@ package admin
 import (
 	"os"
 	"runtime"
+	"server/models"
 
 	"github.com/astaxie/beego"
-	"github.com/lisijie/goblog/models"
 )
 
 type IndexController struct {

@@ -3,10 +3,11 @@ package admin
 import (
 	"strings"
 
+	"server/models"
+	"server/util"
+
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/validation"
-	"github.com/lisijie/goblog/models"
-	"github.com/lisijie/goblog/util"
 )
 
 type UserController struct {
@@ -127,14 +128,18 @@ func (this *UserController) Add() {
 	this.display()
 }
 
-//编辑用户
 func (this *UserController) Edit() {
+}
+
+//编辑用户
+func (this *UserController) VueEdit() {
+	beego.Debug("UserController : VueEdit")
 	id, _ := this.GetInt("id")
 	user := models.User{Id: id}
 	if err := user.Read(); err != nil {
 		this.showmsg("用户不存在")
 	}
-
+	beego.Debug("UserController : VueEdit === 2")
 	errmsg := make(map[string]string)
 
 	if this.Ctx.Request.Method == "POST" {
@@ -169,12 +174,18 @@ func (this *UserController) Edit() {
 
 		if len(errmsg) == 0 {
 			user.Update()
-			this.Redirect("/admin/user/list", 302)
+			//this.Redirect("/admin/user/list", 302)
 		}
 	}
-	this.Data["errmsg"] = errmsg
-	this.Data["user"] = user
-	this.display()
+	//	this.Data["errmsg"] = errmsg
+	//	this.Data["user"] = user
+	//	this.display()
+
+	param := make(map[string]interface{})
+	param["ok"] = 1
+	param["user"] = user
+	this.Data["json"] = param
+	this.ServeJSON()
 }
 
 //删除用户
