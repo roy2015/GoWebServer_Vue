@@ -4,9 +4,9 @@ import (
 	"strconv"
 	"strings"
 
-	"server/controllers/admin/test"
-	"server/models"
-	"server/util"
+	"GoWebServer_Vue/controllers/admin/test"
+	"GoWebServer_Vue/models"
+	"GoWebServer_Vue/util"
 
 	"github.com/astaxie/beego"
 )

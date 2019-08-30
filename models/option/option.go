@@ -4,8 +4,8 @@ import (
 	"strconv"
 	"time"
 
-	"server/models"
-	"server/util"
+	"GoWebServer_Vue/models"
+	"GoWebServer_Vue/util"
 )
 
 func GetOptions() map[string]string {

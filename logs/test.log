@@ -4127,3 +4127,56 @@
 2018/11/18 20:58:18.264 [D] [main.go:78]  Welcom to web back system 
 2018/11/18 20:58:18.354 [I] [asm_amd64.s:2361]  http server Running on http://:8080
 2018/11/18 20:58:18.362 [C] [asm_amd64.s:2361]  ListenAndServe:  listen tcp :8080: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+2019/08/30 18:22:08 [main.go:79][D] log system test! 
+2019/08/30 18:22:08 [main.go:80][D] Welcom to web back system 
+2019/08/30 18:22:08 [asm_amd64.s:1337][I] http server Running on :8080
+2019/08/30 18:23:38 [main.go:79][D] log system test! 
+2019/08/30 18:23:38 [main.go:80][D] Welcom to web back system 
+2019/08/30 18:23:38 [asm_amd64.s:1337][I] http server Running on :8080
+2019/08/30 18:27:14 [main.go:79][D] log system test! 
+2019/08/30 18:27:14 [main.go:80][D] Welcom to web back system 
+2019/08/30 18:27:14 [asm_amd64.s:1337][I] http server Running on :8080
+2019/08/30 18:27:25 [base.go:26][D] ----Prepare---- 
+2019/08/30 18:27:25 [base.go:39][D] ---登录状态验证--11- 
+2019/08/30 18:27:25 [base.go:40][D] cookie:  
+2019/08/30 18:27:25 [index.go:16][D] 进入后台 
+2019/08/30 18:27:25 [router.go:829][D] | GET        | /admin                                   | 2.176651ms       | match      | /admin                                   | 
+2019/08/30 18:27:25 [base.go:26][D] ----Prepare---- 
+2019/08/30 18:27:25 [base.go:39][D] ---登录状态验证--11- 
+2019/08/30 18:27:25 [base.go:40][D] cookie:  
+2019/08/30 18:27:25 [index.go:44][D] 登陆成功 
+2019/08/30 18:27:25 [router.go:829][D] | GET        | /admin/main                              | 9.940295ms       | match      | /admin/main                              | 
+2019/08/30 18:27:30 [base.go:26][D] ----Prepare---- 
+2019/08/30 18:27:30 [base.go:39][D] ---登录状态验证--11- 
+2019/08/30 18:27:30 [base.go:40][D] cookie:  
+2019/08/30 18:27:30 [index.go:44][D] 登陆成功 
+2019/08/30 18:27:30 [router.go:829][D] | GET        | /admin/main                              | 9.737705ms       | match      | /admin/main                              | 
+2019/08/30 18:27:31 [base.go:26][D] ----Prepare---- 
+2019/08/30 18:27:31 [base.go:39][D] ---登录状态验证--11- 
+2019/08/30 18:27:31 [base.go:40][D] cookie:  
+2019/08/30 18:27:31 [router.go:829][D] | GET        | /admin/system/setting                    | 8.017669ms       | match      | /admin/system/setting                    | 
+2019/08/30 18:31:01 [base.go:26][D] ----Prepare---- 
+2019/08/30 18:31:01 [base.go:39][D] ---登录状态验证--11- 
+2019/08/30 18:31:01 [base.go:40][D] cookie:  
+2019/08/30 18:31:01 [router.go:829][D] | GET        | /admin/system/setting                    | 5.876485ms       | match      | /admin/system/setting                    | 
+2019/08/30 18:31:03 [base.go:26][D] ----Prepare---- 
+2019/08/30 18:31:03 [base.go:39][D] ---登录状态验证--11- 
+2019/08/30 18:31:03 [base.go:40][D] cookie:  
+2019/08/30 18:31:03 [index.go:44][D] 登陆成功 
+2019/08/30 18:31:03 [router.go:829][D] | GET        | /admin/main                              | 9.743223ms       | match      | /admin/main                              | 
+2019/08/30 18:31:04 [base.go:26][D] ----Prepare---- 
+2019/08/30 18:31:04 [base.go:39][D] ---登录状态验证--11- 
+2019/08/30 18:31:04 [base.go:40][D] cookie:  
+2019/08/30 18:31:04 [router.go:829][D] | GET        | /admin/article/add                       | 2.947204ms       | match      | /admin/article/add                       | 
+2019/08/30 18:31:09 [base.go:26][D] ----Prepare---- 
+2019/08/30 18:31:09 [base.go:39][D] ---登录状态验证--11- 
+2019/08/30 18:31:09 [base.go:40][D] cookie:  
+2019/08/30 18:31:09 [router.go:829][D] | GET        | /admin/user/add                          | 3.243527ms       | match      | /admin/user/add                          | 
+2019/08/30 18:31:11 [base.go:26][D] ----Prepare---- 
+2019/08/30 18:31:11 [base.go:39][D] ---登录状态验证--11- 
+2019/08/30 18:31:11 [base.go:40][D] cookie:  
+2019/08/30 18:31:11 [router.go:829][D] | GET        | /admin/user/list                         | 8.749223ms       | match      | /admin/user/list                         | 
+2019/08/30 18:31:12 [base.go:26][D] ----Prepare---- 
+2019/08/30 18:31:12 [base.go:39][D] ---登录状态验证--11- 
+2019/08/30 18:31:12 [base.go:40][D] cookie:  
+2019/08/30 18:31:12 [router.go:829][D] | GET        | /admin/user/add                          | 5.978621ms       | match      | /admin/user/add                          | 

@@ -1,8 +1,8 @@
 package admin
 
 import (
-	"server/models"
-	"server/models/option"
+	"GoWebServer_Vue/models"
+	"GoWebServer_Vue/models/option"
 )
 
 type SystemController struct {

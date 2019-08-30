@@ -1,10 +1,10 @@
 package main
 
 import (
-	"server/controllers/admin"
-	"server/controllers/blog"
-	"server/models"
-	"server/util"
+	"GoWebServer_Vue/controllers/admin"
+	"GoWebServer_Vue/controllers/blog"
+	"GoWebServer_Vue/models"
+	"GoWebServer_Vue/util"
 
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/orm"

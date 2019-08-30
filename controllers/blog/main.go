@@ -1,8 +1,8 @@
 package blog
 
 import (
-	"server/models"
-	"server/util"
+	"GoWebServer_Vue/models"
+	"GoWebServer_Vue/util"
 	"strconv"
 	"strings"
 )

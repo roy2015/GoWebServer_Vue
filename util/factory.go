@@ -1,8 +1,8 @@
 package util
 
 import (
+	"GoWebServer_Vue/util/singleton"
 	"errors"
-	"server/util/singleton"
 	"sync"
 )
 

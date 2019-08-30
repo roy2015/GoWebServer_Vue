@@ -1,9 +1,9 @@
 package admin
 
 import (
+	"GoWebServer_Vue/models"
 	"os"
 	"runtime"
-	"server/models"
 
 	"github.com/astaxie/beego"
 )

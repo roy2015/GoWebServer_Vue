@@ -3,8 +3,8 @@ package admin
 import (
 	"strings"
 
-	"server/models"
-	"server/util"
+	"GoWebServer_Vue/models"
+	"GoWebServer_Vue/util"
 
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/validation"
